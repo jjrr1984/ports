@@ -1,0 +1,49 @@
+<div>
+	<table>
+	  <tr>
+	    <td>
+	    	Port name
+	    </td>
+	    <td data-ng-cloack>
+	    	{{port.name}}
+	    </td>
+	  </tr>
+	  <tr>
+	    <td>
+	    	Port code
+	    </td>
+	    <td data-ng-cloack>
+	    	{{port._id}}
+	    </td>
+	  </tr>
+	  <tr>
+	  	<td colspan="2">
+	  		Position
+	  	</td>
+	  </tr>
+	  <tr data-ng-repeat="point in port.position">
+	  	<td colspan="2">
+	  		x:{{point.x}},y:{{point.y}}
+	  	</td>
+	  </tr>
+	  <tr>
+	    <td>
+	    	Max Width
+	    </td>
+	    <td data-ng-cloack>
+	    	{{port.maxWidth}}
+	    </td>
+	  </tr>
+	  <tr>
+	    <td>
+	    	Max Length
+	    </td>
+	    <td data-ng-cloack>
+	    	{{port.maxLength}}
+	    </td>
+	  </tr>
+	</table>
+	<a href="/">
+		Go back
+	</a>
+</div>

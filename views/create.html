@@ -1,0 +1,44 @@
+<div>
+	<form data-ng-submit="createPort()">
+		<div>
+			<label for="portName">Port name</label>
+			<input type="text" name="portName" data-ng-model="port.name"></input>
+		</div>
+		<div>
+			<label for="portCode">Port code</label>
+			<input type="text" name="portCode" data-ng-model="port._id"></input>
+		</div>
+		<div>
+			<label>
+				Position
+			</label>
+			<a href="#" data-ng-click="addPoint()">
+				Add new point
+			</a>
+		</div>
+		<div data-ng-repeat="point in port.position">
+			<label>X</label>
+			<input type="text" data-ng-model="point.x"></input>
+			<label>Y</label>
+			<input type="text" data-ng-model="point.y"></input>
+			<a href="#" data-ng-click="removePoint(point)">
+		    	<span class="glyphicon glyphicon-remove">
+	            </span>
+	        </a>
+		</div>
+		<div>
+			<label for="maxWidth">Max. width</label>
+			<input type="text" name="maxWidth" data-ng-model="port.maxWidth"></input>
+		</div>
+		<div>
+			<label for="maxLength">Max. length</label>
+			<input type="text" name="maxLength" data-ng-model="port.maxLength"></input>
+		</div>
+		<div>
+			<input type="submit" value="Create">
+			<a href="/">
+				Cancel
+			</a>
+		</div>
+	</form>
+</div>

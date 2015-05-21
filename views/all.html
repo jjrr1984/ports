@@ -1,0 +1,31 @@
+<div>
+	<table>
+	  <tr>
+	    <th colspan="4">Port Name</th>
+	  </tr>
+	  <tr data-ng-repeat="port in ports">
+	    <td data-ng-cloak>{{port.name}}</td>
+	    <td>
+	    	<a data-ng-href="/{{port._id}}/read">
+		    	<span class="glyphicon glyphicon-search">
+	            </span>
+            </a>
+        </td>
+	    <td>
+	    	<a data-ng-href="/{{port._id}}/edit">
+		    	<span class="glyphicon glyphicon-pencil">
+	            </span>
+	        </a>
+	    </td>
+	    <td>
+	    	<a href="#" data-ng-click="removePort(port.id)">
+		    	<span class="glyphicon glyphicon-remove">
+	            </span>
+	        </a>
+	    </td>
+	  </tr>
+	</table>
+	<a href="/create">
+		Add port
+	</a>
+</div>

@@ -1,0 +1,11 @@
+{
+  "name": "Ports",
+  "version": "1.0.0",
+  "description": "Ports listing",
+  "author": "Jose Javier Romero Rivas",
+  "dependencies": {
+    "express": "^5.0.0-alpha.1",
+    "mongoose": "^4.0.3",
+    "body-parser": "*"
+  }
+}
