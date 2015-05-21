@@ -16,7 +16,8 @@ app.controller('main',['$scope','$http','$location',function($scope,$http,$locat
 				$scope.ports = records;
 				$scope.createHash();
 				if(reload){
-					$location.path("/");
+					$scope.$broadcast('reloadAll');
+					$location.path('/');
 				}
 			})
 			.error(function(error){
