@@ -19,8 +19,7 @@ app.use(bodyParser.json());
 
 //	Static folders
 app.use('/views',express.static('views'));
-// app.use('/img',express.static('img'));
-// app.use('/css',express.static('css'));
+app.use('/css',express.static('css'));
 app.use('/angular',express.static('angular'));
 
 require('./routes')(app);	//	Adding routes
